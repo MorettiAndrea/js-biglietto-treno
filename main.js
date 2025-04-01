@@ -30,3 +30,4 @@ let totalCostOutput = totalCost.toFixed(2);
 
 console.log("totalCost:", totalCost);
 console.log("totalCostOutput", totalCostOutput);
+alert(totalCostOutput);
