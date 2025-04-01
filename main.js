@@ -13,7 +13,6 @@ console.log("costPerKm:", costPerKm);
 // risoluzione
 
 // minor discount
-
 const minorDiscount = userAge >= 0 && userAge <= 18;
 
 if (minorDiscount == true) {
@@ -30,4 +29,7 @@ if (elderDiscount == true) {
   totalCost = totalCost * 0.6;
 }
 
+let totalCostOutput = totalCost.toFixed(2);
+
 console.log("totalCost:", totalCost);
+console.log("totalCostOutput", totalCostOutput);
