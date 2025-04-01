@@ -14,17 +14,14 @@ console.log("costPerKm:", costPerKm);
 
 // minor discount
 const minorDiscount = userAge >= 0 && userAge <= 18;
+const elderDiscount = userAge >= 65;
 
 if (minorDiscount == true) {
   console.log("minorDiscount", minorDiscount);
   totalCost = totalCost * 0.8;
-}
 
-// elder discount
-
-const elderDiscount = userAge >= 65;
-
-if (elderDiscount == true) {
+  // elder discount
+} else if (elderDiscount == true) {
   console.log("elderDiscount", elderDiscount);
   totalCost = totalCost * 0.6;
 }
